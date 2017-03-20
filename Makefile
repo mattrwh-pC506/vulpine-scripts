@@ -3,6 +3,7 @@
 	
 CC = g++
 
+BIN_DIR = "bin"
 
 BASE_FLAGS = 
 
@@ -24,7 +25,7 @@ FLAGS = $(BASE_FLAGS) $(LLIBFLAGS) $(LDFLAGS) $(LINKFLAGS)
 default: setup findreplace install
 
 setup:
-	mkdir bin
+	mkdir -p bin
 
 findreplace: ./src/find-replace.cpp
 	$(CC) $(FLAGS) -o ./bin/vp-fr ./src/find-replace.cpp

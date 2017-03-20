@@ -6,9 +6,9 @@ int main() {
     std::string fileExt;
     std::string searchPath;
 
-    std::cout << "pipe delimited string of file extensions: ";
+    std::cout << "Pipe delimited string of file extensions: ";
     std::cin >> fileExt;
-    std::cout << "Search paths: ";
+    std::cout << "Search path e.g. 's/find/replace/g': ";
     std::cin >> searchPath;
     std::cin.ignore();
 
